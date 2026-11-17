@@ -73,6 +73,7 @@
             <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
             <div class="field"><label for="phone">Your WhatsApp number *</label><input id="phone" name="phone" autocomplete="tel" type="tel" required placeholder="e.g. 080…"></div>
             <div class="field full"><label for="service">What are you enquiring about? *</label><select id="service" name="service" required><option value="">Choose an option</option><option value="Bridal makeup">Bridal makeup (on-location)</option><option value="Glam & occasion looks">Glam & occasion looks</option><option value="Group / bridal party makeup">Group / bridal party makeup</option><option value="Makeup training">Makeup training</option><option value="Beauty essentials">Beauty essentials</option><option value="Custom package">Custom package</option><option value="Other makeup enquiry">Other makeup enquiry</option></select></div>
+            <div class="field full service-dependent" data-for="bridal"><label for="budget">What is your bridal makeup budget? (₦) *</label><input id="budget" name="budget" type="number" min="0" inputmode="numeric" placeholder="Your budget in naira"></div>
             <div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
             <div class="field"><label for="time">Preferred time *</label><input id="time" name="time" type="time" required><span class="help">Jumai will follow up about this requested time.</span></div>
             <div class="field service-dependent" data-for="group"><label for="people">How many people?</label><input id="people" name="people" type="number" min="1" placeholder="Total people needing makeup"></div>
@@ -105,11 +106,12 @@
     function updateServiceFields(){
       const value=serviceSelect.value;
       const isGroup=value==='Group / bridal party makeup';
+      const isBridal=value==='Bridal makeup';
       const isTravel=value==='Bridal makeup'||isGroup||value==='Other makeup enquiry'||value==='Glam & occasion looks'||value==='Custom package';
       dependentFields.forEach(field=>{
-        const show=field.dataset.for==='group'?isGroup:isTravel;
+        const show=field.dataset.for==='group'?isGroup:field.dataset.for==='bridal'?isBridal:isTravel;
         field.hidden=!show;
-        field.querySelectorAll('input').forEach(input=>{input.required=show&&input.id==='city';if(!show)input.value=''});
+        field.querySelectorAll('input').forEach(input=>{input.required=show&&(input.id==='city'||input.id==='budget');if(!show)input.value=''});
       });
       document.getElementById('people').required=isGroup;
     }
@@ -126,6 +128,7 @@
         `Name: ${d.get('name')}`,
         `My WhatsApp: ${d.get('phone')}`,
         `Service: ${d.get('service')}`,
+        ...(d.get('budget')?[`Bridal makeup budget: ₦${Number(d.get('budget')).toLocaleString('en-NG')}`]:[]),
         ...(d.get('people')?[`Number of people: ${d.get('people')}`]:[]),
         `Event date: ${date}`,
         `Preferred start time: ${d.get('time')||'Flexible / to confirm'}`,
