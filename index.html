@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f3ef">
+  <meta name="description" content="Request bridal and group makeup bookings with Beauty by Jumai, based in Ilorin and available across Southwest Nigeria.">
+  <title>Bookings | Beauty by Jumai</title>
+  <style>
+    :root{--ink:#171514;--muted:#736c66;--paper:#f7f3ef;--white:#fffdfa;--line:#e5dcd4;--gold:#a77948;--rose:#ead8cc;--green:#526b57;--shadow:0 24px 70px #3b2b1d12}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif}a{color:inherit}.serif{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.035em}.topline{height:5px;background:linear-gradient(90deg,#171514,#a77948,#ead8cc)}
+    header{max-width:1160px;margin:auto;padding:24px 28px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand img{width:54px;height:54px;object-fit:contain;border-radius:50%;mix-blend-mode:multiply}.brand-name{font:18px Georgia,serif;letter-spacing:.08em;text-transform:uppercase}.brand-sub{display:block;font:10px Arial,sans-serif;color:var(--muted);letter-spacing:.2em;margin-top:5px}.nav{display:flex;gap:24px;align-items:center;font-size:13px}.nav a{text-decoration:none}.nav .pill{border:1px solid var(--ink);border-radius:99px;padding:11px 17px}
+    .hero{max-width:1160px;margin:0 auto;padding:46px 28px 64px;display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}.eyebrow{font-size:11px;text-transform:uppercase;letter-spacing:.22em;color:var(--gold);font-weight:bold}.hero h1{font-size:clamp(48px,7vw,82px);line-height:.99;margin:20px 0}.hero h1 em{color:var(--gold);font-weight:400}.hero p{max-width:500px;color:var(--muted);font-size:16px;line-height:1.75}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.button{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:3px;padding:14px 20px;text-decoration:none;font-size:13px;font-weight:bold;transition:.2s}.button.dark{background:var(--ink);color:white}.button.light{border:1px solid var(--line);background:var(--white)}.button:hover{transform:translateY(-2px)}.hero-card{min-height:440px;background:var(--rose);position:relative;overflow:hidden;display:grid;place-items:center}.hero-card:before,.hero-card:after{content:"";position:absolute;border:1px solid #fff8;border-radius:50%;width:390px;height:390px}.hero-card:after{width:300px;height:300px}.hero-logo{position:relative;z-index:1;width:min(68%,340px);mix-blend-mode:multiply}.card-caption{position:absolute;z-index:2;bottom:20px;left:20px;color:#55483e;font:italic 14px Georgia,serif}
+    .trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);max-width:1104px;margin:0 auto;padding:21px 28px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;color:var(--muted);font-size:12px}.trust span:before{content:'✦';color:var(--gold);margin-right:9px}.service .button{margin-top:16px}.map-frame{display:block;width:100%;height:270px;border:0;background:#eee6de}.map-caption{max-width:1160px;margin:-52px auto 60px;padding:0 28px;position:relative;z-index:1}.map-card{display:inline-flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--line);padding:14px 18px;box-shadow:var(--shadow);font-size:13px}.pin{width:12px;height:12px;background:#b54e70;border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:inline-block}.map-card a{color:var(--gold)}
+    .section{max-width:1160px;margin:0 auto;padding:88px 28px}.section-head{max-width:620px;margin-bottom:35px}.section h2{font-size:clamp(35px,5vw,55px);line-height:1.04;margin:13px 0}.section-head p{color:var(--muted);line-height:1.7}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.service{background:var(--white);border:1px solid var(--line);padding:25px;min-height:178px}.service small{color:var(--gold);letter-spacing:.16em;text-transform:uppercase;font-size:10px}.service h3{font:26px Georgia,serif;margin:19px 0 9px}.service p{font-size:13px;color:var(--muted);line-height:1.55;margin:0}.service.inquiry{background:#eee6de}
+    .booking-wrap{background:#eee7e0}.booking{max-width:1160px;margin:auto;padding:82px 28px;display:grid;grid-template-columns:.78fr 1.22fr;gap:50px}.booking-copy{position:sticky;top:30px;align-self:start}.booking-copy h2{font-size:clamp(38px,5vw,58px);line-height:1.02;margin:15px 0}.booking-copy p{color:var(--muted);line-height:1.7}.steps{list-style:none;padding:0;margin:26px 0}.steps li{display:flex;gap:13px;margin:17px 0;font-size:13px;line-height:1.5}.num{width:25px;height:25px;flex:none;border:1px solid #cdbcae;border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:11px}.form-card{background:var(--white);padding:clamp(22px,4vw,42px);box-shadow:var(--shadow)}.form-card h3{font:31px Georgia,serif;margin:0 0 8px}.form-card>p{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 25px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px}.field.full{grid-column:1/-1}label,.legend{font-size:11px;text-transform:uppercase;letter-spacing:.09em;font-weight:bold}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:2px;background:#fffdfa;padding:13px;font:14px Arial;color:var(--ink);outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold);box-shadow:0 0 0 2px #a779481c}.field textarea{min-height:94px;resize:vertical}.help{font-size:11px;color:var(--muted);line-height:1.45}.choice-set{border:0;padding:0;margin:0;grid-column:1/-1}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}.choice{position:relative}.choice input{position:absolute;opacity:0}.choice label{display:block;text-transform:none;letter-spacing:0;font-size:13px;font-weight:400;line-height:1.5;border:1px solid var(--line);padding:15px;cursor:pointer;height:100%}.choice label strong{display:block;margin-bottom:4px}.choice input:checked+label{border-color:var(--gold);background:#f7f0e9}.policy{grid-column:1/-1;font-size:12px;color:var(--muted);line-height:1.6;background:#f5f0eb;padding:14px}.submit{grid-column:1/-1;border:0;cursor:pointer;width:100%;font-size:14px;padding:16px}.fine{grid-column:1/-1;text-align:center;color:var(--muted);font-size:10px;line-height:1.5;margin-top:-7px}
+    .social{max-width:1160px;margin:auto;padding:70px 28px 80px;display:flex;align-items:center;justify-content:space-between;gap:30px}.social h2{font:42px Georgia,serif;margin:8px 0}.social p{color:var(--muted)}.social-links{display:flex;gap:10px;flex-wrap:wrap}.social-links a{border:1px solid var(--line);padding:13px 17px;text-decoration:none;font-size:13px;background:var(--white)}footer{background:#171514;color:#fff;padding:28px}.footer-inner{max-width:1104px;margin:auto;display:flex;justify-content:space-between;gap:16px;align-items:center;font-size:11px;color:#c5bcb4}.footer-inner a{color:white;text-decoration:none}.notice{display:none;position:fixed;inset:0;background:#171514aa;z-index:10;place-items:center;padding:20px}.notice.show{display:grid}.notice-card{max-width:460px;background:var(--white);padding:32px;text-align:center;box-shadow:var(--shadow)}.notice-card h3{font:32px Georgia,serif;margin:0 0 12px}.notice-card p{color:var(--muted);font-size:14px;line-height:1.65}.notice-card .button{margin-top:8px}
+    @media(max-width:760px){header{padding:17px 20px}.nav>a:not(.pill){display:none}.hero{padding:30px 20px 45px;grid-template-columns:1fr;gap:26px}.hero-card{min-height:300px}.trust{padding:18px 20px}.section{padding:64px 20px}.service-grid{grid-template-columns:1fr}.service{min-height:unset}.booking{grid-template-columns:1fr;padding:62px 20px;gap:22px}.booking-copy{position:static}.social{padding:55px 20px;align-items:flex-start;flex-direction:column}.footer-inner{flex-direction:column;align-items:flex-start}.form-grid{grid-template-columns:1fr}.field.full,.choice-set,.policy,.submit,.fine{grid-column:1}.choices{grid-template-columns:1fr}}
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="topline"></div>
+  <header>
+    <a class="brand" href="#home" aria-label="Beauty by Jumai home">
+      <img src="logo.png" alt="Beauty by Jumai BJ logo">
+      <span class="brand-name">Beauty by Jumai<span class="brand-sub">BRIDAL · EVENT · GROUP GLAM</span></span>
+    </a>
+    <nav class="nav" aria-label="Main navigation"><a href="#services">Services</a><a href="#how-it-works">How booking works</a><a class="pill" href="#book">Request a booking</a></nav>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Ilorin · Available across Southwest Nigeria</div>
+        <h1 class="serif">Your moment.<br><em>Your kind of</em><br>beautiful.</h1>
+        <p>Makeup for brides, celebrations and the people you want beside you. Based in Ilorin and available to travel across the Southwest for bridal and group bookings.</p>
+        <div class="actions"><a class="button dark" href="#book">Request your date <span aria-hidden="true">↗</span></a><a class="button light" href="https://wa.me/2347068648985?text=Hi%20Beauty%20by%20Jumai%2C%20I%E2%80%99d%20like%20to%20ask%20about%20a%20makeup%20booking.">Chat on WhatsApp</a></div>
+      </div>
+      <div class="hero-card"><img class="hero-logo" src="logo.png" alt="BJ Beauty by Jumai monogram"><div class="card-caption">Beauty that feels like you.</div></div>
+    </section>
+    <div class="trust"><span>Ilorin based</span><span>Southwest travel available</span><span>Bridal & group enquiries welcome</span><span>Booking requests reviewed personally</span></div>
+    <section class="section" id="services">
+      <div class="section-head"><div class="eyebrow">The occasion, your way</div><h2 class="serif">Makeup for the moments that matter.</h2><p>Tell us what you’re celebrating and we’ll confirm the best service, timing and quote for your event.</p></div>
+      <div class="service-grid">
+        <article class="service"><small>01 · Studio · MFM, Tanke</small><h3>Walk-in studio</h3><p>Visit Jumai’s Ilorin studio for an available makeup service.</p><p><strong>Address:</strong> MFM, Tanke, Ilorin, Kwara State · Postcode KW-07-A27-KG-07</p><a class="button light" href="https://calendar.app.google/MheejNmqJobHLPL36" target="_blank" rel="noopener noreferrer">Choose a studio slot ↗</a><a class="button dark" href="https://www.google.com/maps/search/?api=1&query=8.4699986%2C4.6207949" target="_blank" rel="noopener noreferrer">Get directions ↗</a></article>
+        <article class="service"><small>02 · Wedding</small><h3>Bridal glam</h3><p>For your wedding day, traditional ceremony or another bridal moment. Share your event date and venue for travel planning.</p></article>
+        <article class="service inquiry"><small>03 · Together</small><h3>Group makeup</h3><p>Getting ready with your bridal party, family or a larger group? Tell us how many people need makeup and where the event is.</p></article>
+        <article class="service"><small>04 · Celebrations</small><h3>Glam & occasion looks</h3><p>From soft glam to full glam, for events and celebrations.</p><a class="button light" href="#book">Enquire on WhatsApp ↗</a></article>
+        <article class="service"><small>05 · Learn</small><h3>Makeup training</h3><p>Learn, practise and build your makeup skills with expert guidance.</p><a class="button light" href="#book">Ask about training ↗</a></article>
+        <article class="service"><small>06 · Beauty</small><h3>Beauty essentials</h3><p>Premium makeup products handpicked to enhance your beauty.</p><a class="button light" href="#book">Ask about products ↗</a></article>
+        <article class="service inquiry"><small>07 · Tailored for you</small><h3>Custom packages</h3><p>Tailored beauty packages designed around your needs and style.</p><a class="button light" href="#book">Build a package ↗</a></article>
+      </div>
+    </section>
+    <section aria-label="Studio location">
+      <iframe class="map-frame" title="Google Maps pin for Beauty by Jumai studio in Oko Erin, Ilorin" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=8.4699986%2C4.6207949&output=embed"></iframe>
+      <div class="map-caption"><div class="map-card"><span class="pin" aria-hidden="true"></span><span><strong>Beauty by Jumai · Ilorin Studio</strong><br>MFM, Tanke, Ilorin, Kwara State<br>Postcode: KW-07-A27-KG-07</span><a href="https://www.google.com/maps/search/?api=1&query=8.4699986%2C4.6207949" target="_blank" rel="noopener noreferrer">Open map ↗</a></div></div>
+    </section>
+    <section class="booking-wrap" id="book">
+      <div class="booking" id="how-it-works">
+        <div class="booking-copy"><div class="eyebrow">Studio & on-location bookings</div><h2 class="serif">Let’s plan your glam.</h2><p>Choose the kind of service you need and share your preferred date and time. Jumai will follow up while the live Google Calendar booking link is being set up.</p>
+          <ol class="steps"><li><span class="num">1</span><span>Select studio, bridal or group makeup.</span></li><li><span class="num">2</span><span>Share the date, time and service-specific details.</span></li><li><span class="num">3</span><span>Send the enquiry to Jumai on WhatsApp.</span></li></ol>
+        </div>
+        <div class="form-card"><h3>Booking enquiry</h3><p>Complete what you can. We’ll open WhatsApp with your enquiry ready to send to Jumai.</p>
+          <form id="booking-form" class="form-grid">
+            <div class="field"><label for="name">Your name *</label><input id="name" name="name" autocomplete="name" required placeholder="Full name"></div>
+            <div class="field"><label for="phone">Your WhatsApp number *</label><input id="phone" name="phone" autocomplete="tel" type="tel" required placeholder="e.g. 080…"></div>
+            <div class="field full"><label for="service">What are you enquiring about? *</label><select id="service" name="service" required><option value="">Choose an option</option><option value="Bridal makeup">Bridal makeup (on-location)</option><option value="Glam & occasion looks">Glam & occasion looks</option><option value="Group / bridal party makeup">Group / bridal party makeup</option><option value="Makeup training">Makeup training</option><option value="Beauty essentials">Beauty essentials</option><option value="Custom package">Custom package</option><option value="Other makeup enquiry">Other makeup enquiry</option></select></div>
+            <div class="field"><label for="date">Preferred date *</label><input id="date" name="date" type="date" required></div>
+            <div class="field"><label for="time">Preferred time *</label><input id="time" name="time" type="time" required><span class="help">Jumai will follow up about this requested time.</span></div>
+            <div class="field service-dependent" data-for="group"><label for="people">How many people?</label><input id="people" name="people" type="number" min="1" placeholder="Total people needing makeup"></div>
+            <div class="field service-dependent" data-for="travel"><label for="city">Event city / town *</label><input id="city" name="city" placeholder="e.g. Ilorin, Ibadan, Lagos"></div>
+            <div class="field service-dependent full" data-for="travel"><label for="venue">Event venue or area</label><input id="venue" name="venue" placeholder="Venue name or neighbourhood"></div>
+            <div class="field full service-dependent" data-for="studio"><span class="help">Studio bookings are at MFM, Tanke, Ilorin, Kwara State (postcode KW-07-A27-KG-07).</span></div>
+            <fieldset class="choice-set"><legend class="legend">Deposit preference *</legend><div class="choices">
+              <div class="choice"><input type="radio" id="deposit-yes" name="deposit" value="I would like to discuss making a deposit" required><label for="deposit-yes"><strong>I’m open to a deposit</strong>Deposits are optional and help us prioritise your booking.</label></div>
+              <div class="choice"><input type="radio" id="deposit-no" name="deposit" value="I prefer not to make a deposit now"><label for="deposit-no"><strong>No deposit for now</strong>You can still book an available slot without a deposit.</label></div>
+            </div></fieldset>
+            <div class="field full"><label for="notes">Anything else we should know?</label><textarea id="notes" name="notes" placeholder="Event details, travel/logistics, training goals, products, package ideas, or questions"></textarea></div>
+            <div class="policy"><strong>Good to know:</strong> This form is for bridal and group enquiries; use the Ilorin Studio card above to choose a live available slot. Deposits are optional; clients who pay one receive priority. Bridal and group bookings can travel throughout Southwest Nigeria; clients cover travel and logistics. There is no cancellation fee. Please arrive strictly on time. Rescheduling is arranged against the calendar.</div>
+            <button class="button dark submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+            <div class="fine">Submitting opens WhatsApp with your details for you to review and send. Your message is not sent automatically.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="social"><div><div class="eyebrow">Follow the work</div><h2>Come see the glam.</h2><p>Follow Beauty by Jumai for looks, transformations and booking updates.</p></div><div class="social-links"><a href="https://www.instagram.com/beautyby_jumai" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@beautyby_jumai" target="_blank" rel="noopener noreferrer">TikTok ↗</a><a href="https://wa.me/2347068648985" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a></div></section>
+  </main>
+  <footer><div class="footer-inner"><span>© <span id="year"></span> Beauty by Jumai · Ilorin, Nigeria</span><span>Bridal and group bookings across Southwest Nigeria</span><a href="#home">Back to top ↑</a></div></footer>
+  <div class="notice" id="notice" role="dialog" aria-modal="true" aria-labelledby="notice-title"><div class="notice-card"><h3 id="notice-title">Your booking details are ready</h3><p>WhatsApp will open with your booking details. Please review the message and tap Send to share it with Jumai.</p><a class="button dark" id="open-whatsapp" href="#">Open WhatsApp</a><p><button id="close-notice" class="button light" type="button">Back to form</button></p></div></div>
+  <script>
+    const form=document.getElementById('booking-form');
+    const notice=document.getElementById('notice');
+    const serviceSelect=document.getElementById('service');
+    const dependentFields=[...document.querySelectorAll('.service-dependent')];
+    let waUrl='';
+    document.getElementById('year').textContent=new Date().getFullYear();
+    function updateServiceFields(){
+      const value=serviceSelect.value;
+      const isGroup=value==='Group / bridal party makeup';
+      const isTravel=value==='Bridal makeup'||isGroup||value==='Other makeup enquiry'||value==='Glam & occasion looks'||value==='Custom package';
+      dependentFields.forEach(field=>{
+        const show=field.dataset.for==='group'?isGroup:isTravel;
+        field.hidden=!show;
+        field.querySelectorAll('input').forEach(input=>{input.required=show&&input.id==='city';if(!show)input.value=''});
+      });
+      document.getElementById('people').required=isGroup;
+    }
+    serviceSelect.addEventListener('change',updateServiceFields);
+    updateServiceFields();
+    form.addEventListener('submit',event=>{
+      event.preventDefault();
+      if(!form.reportValidity()) return;
+      const d=new FormData(form);
+      const date=d.get('date')?new Date(`${d.get('date')}T12:00:00`).toLocaleDateString('en-NG',{day:'numeric',month:'long',year:'numeric'}):'Not provided';
+      const lines=[
+        'Hello Beauty by Jumai, I would like to request a makeup booking.',
+        '',
+        `Name: ${d.get('name')}`,
+        `My WhatsApp: ${d.get('phone')}`,
+        `Service: ${d.get('service')}`,
+        ...(d.get('people')?[`Number of people: ${d.get('people')}`]:[]),
+        `Event date: ${date}`,
+        `Preferred start time: ${d.get('time')||'Flexible / to confirm'}`,
+        ...(d.get('city')?[`Event city / town: ${d.get('city')}`]:[]),
+        ...(d.get('venue')?[`Venue / area: ${d.get('venue')}`]:[]),
+        `Deposit preference: ${d.get('deposit')}`,
+        `Additional details: ${d.get('notes')||'None'}`,
+        '',
+        'This is my preferred date and time. Please let me know if it is available.'
+      ];
+      waUrl=`https://wa.me/2347068648985?text=${encodeURIComponent(lines.join('\n'))}`;
+      document.getElementById('open-whatsapp').href=waUrl;
+      notice.classList.add('show');
+    });
+    document.getElementById('close-notice').addEventListener('click',()=>notice.classList.remove('show'));
+    notice.addEventListener('click',e=>{if(e.target===notice)notice.classList.remove('show')});
+    document.addEventListener('keydown',e=>{if(e.key==='Escape')notice.classList.remove('show')});
+  </script>
+</body>
+</html>
