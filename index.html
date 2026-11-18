@@ -81,10 +81,10 @@
             <div class="field service-dependent" data-for="group"><label for="people">How many people?</label><input id="people" name="people" type="number" min="1" placeholder="Total people needing makeup"></div>
             <div class="field service-dependent" data-for="travel"><label for="city">Event city / town *</label><input id="city" name="city" placeholder="e.g. Ilorin, Ibadan, Lagos"></div>
             <div class="field service-dependent full" data-for="travel"><label for="venue">Event venue or area</label><input id="venue" name="venue" placeholder="Venue name or neighbourhood"></div>
-            <div class="field full service-dependent" data-for="studio"><span class="help">Studio bookings are at MFM, Tanke, Ilorin, Kwara State (postcode KW-07-A27-KG-07).</span></div>
+            <div class="field full service-dependent" data-for="studio"><span class="help">Studio glam takes place at MFM, Tanke, Ilorin, Kwara State (postcode KW-07-A27-KG-07). <a href="https://www.google.com/maps/search/?api=1&amp;query=8.4699986%2C4.6207949" target="_blank" rel="noopener noreferrer">Open studio pin in Google Maps ↗</a></span></div>
             <fieldset class="choice-set"><legend class="legend">Booking deposit *</legend><p><label style="text-transform:none;letter-spacing:normal;font-size:13px"><input type="checkbox" name="deposit" value="I understand that my booking is confirmed once the deposit is paid" required> I understand that my booking is confirmed once the deposit is paid.</label></p><span class="help">Contact Jumai on WhatsApp for the deposit amount and payment details.</span></fieldset>
             <div class="field full"><label for="notes">Anything else we should know?</label><textarea id="notes" name="notes" placeholder="Event details, travel/logistics, training goals, products, package ideas, or questions"></textarea></div>
-            <div class="policy"><strong>Good to know:</strong> This form is for bridal and group enquiries; use the Ilorin Studio card above to choose a live available slot. A deposit is required to confirm your booking. Selecting a studio time or sending an enquiry is the first step. Bridal and group bookings can travel throughout Southwest Nigeria; clients cover travel and logistics. There is no cancellation fee. Please arrive strictly on time. Rescheduling is arranged against the calendar.</div>
+            <div class="policy"><strong>Good to know:</strong> For studio availability, use the calendar link in the Ilorin Studio card above. A deposit is required to confirm your booking. Selecting a studio time or sending an enquiry is the first step. Bridal and group bookings can travel throughout Southwest Nigeria; clients cover travel and logistics. There is no cancellation fee. Please arrive strictly on time. Rescheduling is arranged against the calendar.</div>
             <button class="button dark submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
             <div class="fine">Submitting opens WhatsApp with your details for you to review and send. Your message is not sent automatically.</div>
           </form>
@@ -106,9 +106,9 @@
       const value=serviceSelect.value;
       const isGroup=value==='Group / bridal party makeup';
       const isBridal=value==='Bridal makeup';
-      const isTravel=value==='Bridal makeup'||isGroup||value==='Other makeup enquiry'||value==='Glam & occasion looks'||value==='Custom package';
+      const isStudioGlam=value==='Glam & occasion looks'; const isTravel=isBridal||isGroup||value==='Other makeup enquiry'||value==='Custom package';
       dependentFields.forEach(field=>{
-        const show=field.dataset.for==='group'?isGroup:field.dataset.for==='bridal'?isBridal:isTravel;
+        const show=field.dataset.for==='group'?isGroup:field.dataset.for==='bridal'?isBridal:field.dataset.for==='studio'?isStudioGlam:isTravel;
         field.hidden=!show;
         field.querySelectorAll('input').forEach(input=>{input.required=show&&(input.id==='city'||input.id==='budget');if(!show)input.value=''});
       });
