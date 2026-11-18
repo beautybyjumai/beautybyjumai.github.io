@@ -52,7 +52,7 @@
     <section class="section" id="services">
       <div class="section-head"><div class="eyebrow">The occasion, your way</div><h2 class="serif">Makeup for the moments that matter.</h2><p>Tell us what you’re celebrating and we’ll confirm the best service, timing and quote for your event.</p></div>
       <div class="service-grid">
-        <article class="service"><small>01 · Studio · MFM, Tanke</small><h3>Walk-in studio</h3><p>Visit Jumai’s Ilorin studio for an available makeup service.</p><p><strong>Studio session: ₦30,000</strong></p><p><strong>Address:</strong> MFM, Tanke, Ilorin, Kwara State · Postcode KW-07-A27-KG-07</p><a class="button light" href="https://calendar.app.google/MheejNmqJobHLPL36" target="_blank" rel="noopener noreferrer">Choose a studio slot ↗</a><a class="button dark" href="https://www.google.com/maps/search/?api=1&query=8.4699986%2C4.6207949" target="_blank" rel="noopener noreferrer">Get directions ↗</a></article>
+        <article class="service"><small>01 · Studio · MFM, Tanke</small><h3>Walk-in studio</h3><p>Visit Jumai’s Ilorin studio for an available makeup service.</p><p><strong>Studio session: ₦30,000</strong></p><p><strong>Address:</strong> MFM, Tanke, Ilorin, Kwara State · Postcode KW-07-A27-KG-07</p><a class="button light" href="https://calendar.app.google/MheejNmqJobHLPL36" target="_blank" rel="noopener noreferrer">Choose a studio slot ↗</a><p>A deposit is required to confirm your studio booking. <a href="https://wa.me/2347068648985">Ask Jumai for payment details.</a></p><a class="button dark" href="https://www.google.com/maps/search/?api=1&query=8.4699986%2C4.6207949" target="_blank" rel="noopener noreferrer">Get directions ↗</a></article>
         <article class="service"><small>02 · Wedding</small><h3>Bridal glam</h3><p>For your wedding day, traditional ceremony or another bridal moment. Share your event date and venue for travel planning.</p></article>
         <article class="service inquiry"><small>03 · Together</small><h3>Group makeup</h3><p>Getting ready with your bridal party, family or a larger group? Tell us how many people need makeup and where the event is.</p></article>
         <article class="service"><small>04 · Celebrations</small><h3>Glam & occasion looks</h3><p>From soft glam to full glam, for events and celebrations.</p><a class="button light" href="#book">Enquire on WhatsApp ↗</a></article>
@@ -67,7 +67,7 @@
     </section>
     <section class="booking-wrap" id="book">
       <div class="booking" id="how-it-works">
-        <div class="booking-copy"><div class="eyebrow">Studio & on-location bookings</div><h2 class="serif">Let’s plan your glam.</h2><p>Choose the kind of service you need and share your preferred date and time. Jumai will follow up while the live Google Calendar booking link is being set up.</p>
+        <div class="booking-copy"><div class="eyebrow">Studio & on-location bookings</div><h2 class="serif">Let’s plan your glam.</h2><p>Choose the kind of service you need and share your preferred date and time. Your booking is confirmed once your deposit is paid. Contact Jumai on WhatsApp for payment details.</p>
           <ol class="steps"><li><span class="num">1</span><span>Select studio, bridal or group makeup.</span></li><li><span class="num">2</span><span>Share the date, time and service-specific details.</span></li><li><span class="num">3</span><span>Send the enquiry to Jumai on WhatsApp.</span></li></ol>
         </div>
         <div class="form-card"><h3>Booking enquiry</h3><p>Complete what you can. We’ll open WhatsApp with your enquiry ready to send to Jumai.</p>
@@ -82,12 +82,9 @@
             <div class="field service-dependent" data-for="travel"><label for="city">Event city / town *</label><input id="city" name="city" placeholder="e.g. Ilorin, Ibadan, Lagos"></div>
             <div class="field service-dependent full" data-for="travel"><label for="venue">Event venue or area</label><input id="venue" name="venue" placeholder="Venue name or neighbourhood"></div>
             <div class="field full service-dependent" data-for="studio"><span class="help">Studio bookings are at MFM, Tanke, Ilorin, Kwara State (postcode KW-07-A27-KG-07).</span></div>
-            <fieldset class="choice-set"><legend class="legend">Deposit preference *</legend><div class="choices">
-              <div class="choice"><input type="radio" id="deposit-yes" name="deposit" value="I would like to discuss making a deposit" required><label for="deposit-yes"><strong>I’m open to a deposit</strong>Deposits are optional and help us prioritise your booking.</label></div>
-              <div class="choice"><input type="radio" id="deposit-no" name="deposit" value="I prefer not to make a deposit now"><label for="deposit-no"><strong>No deposit for now</strong>You can still book an available slot without a deposit.</label></div>
-            </div></fieldset>
+            <fieldset class="choice-set"><legend class="legend">Booking deposit *</legend><p><label style="text-transform:none;letter-spacing:normal;font-size:13px"><input type="checkbox" name="deposit" value="I understand that my booking is confirmed once the deposit is paid" required> I understand that my booking is confirmed once the deposit is paid.</label></p><span class="help">Contact Jumai on WhatsApp for the deposit amount and payment details.</span></fieldset>
             <div class="field full"><label for="notes">Anything else we should know?</label><textarea id="notes" name="notes" placeholder="Event details, travel/logistics, training goals, products, package ideas, or questions"></textarea></div>
-            <div class="policy"><strong>Good to know:</strong> This form is for bridal and group enquiries; use the Ilorin Studio card above to choose a live available slot. Deposits are optional; clients who pay one receive priority. Bridal and group bookings can travel throughout Southwest Nigeria; clients cover travel and logistics. There is no cancellation fee. Please arrive strictly on time. Rescheduling is arranged against the calendar.</div>
+            <div class="policy"><strong>Good to know:</strong> This form is for bridal and group enquiries; use the Ilorin Studio card above to choose a live available slot. A deposit is required to confirm your booking. Selecting a studio time or sending an enquiry is the first step. Bridal and group bookings can travel throughout Southwest Nigeria; clients cover travel and logistics. There is no cancellation fee. Please arrive strictly on time. Rescheduling is arranged against the calendar.</div>
             <button class="button dark submit" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
             <div class="fine">Submitting opens WhatsApp with your details for you to review and send. Your message is not sent automatically.</div>
           </form>
@@ -136,7 +133,7 @@
         `Preferred start time: ${d.get('time')||'Flexible / to confirm'}`,
         ...(d.get('city')?[`Event city / town: ${d.get('city')}`]:[]),
         ...(d.get('venue')?[`Venue / area: ${d.get('venue')}`]:[]),
-        `Deposit preference: ${d.get('deposit')}`,
+        `Deposit acknowledgement: ${d.get('deposit')}`,
         `Additional details: ${d.get('notes')||'None'}`,
         '',
         'This is my preferred date and time. Please let me know if it is available.'
